@@ -73,6 +73,7 @@ if (empty($_GET["search"])){
 
 					mysqli_stmt_execute($prod_check);
 					
+                    
 					mysqli_stmt_bind_result($prod_check, $ID, $category_id, $color, $description, $dimensions, $price, $product_name, $product_image, $qty); $ctr = 1;
 					while(mysqli_stmt_fetch($prod_check)){
 						?>
